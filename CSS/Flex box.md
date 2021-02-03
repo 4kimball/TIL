@@ -18,7 +18,7 @@ div{
 - 하지만 `flex-direction`을 통해 `main axis`의 방향을 `column`으로 변경시킬 수 있다. 이때 `main axis`는 `column`이 되고 `cross axis`는 `row`가 된다.
 - 각각의 item들은 **container 가 제어**하는 것이다.
 
-![image-20210203101634293](C:\Users\2018\AppData\Roaming\Typora\typora-user-images\image-20210203101634293.png)
+![image-20210203101634293](image-20210203101634293.png)
 
 > ※출처 : https://developer.mozilla.org/ko/docs/Learn/CSS/CSS_layout/Flexbox
 
