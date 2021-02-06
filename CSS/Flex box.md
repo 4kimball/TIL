@@ -47,5 +47,8 @@ div{
 - `align`이라는 속성은 `cross axis`를 기준으로 `flex-item`을 정렬한다.
 - `align`의 종류는 다음과 같다.
   - `align-items` : 각각의 한 줄에 대해 속성을 적용한다.
+    - **flex-start, flex-end, center, stretch(기본값), baseline**
   - `align-content` : 여러 줄을 한번에 속성을 적용한다.
+    - **flex-start, flex-end, center, stretch, space-between, space-around**
   - `align-self` : 개별 요소들을 각각 배치한다. (container가 아닌 item에서 속성을 적용한다.)
+    - **auto, flex-start, flex-end, center, baseline, stretch**
