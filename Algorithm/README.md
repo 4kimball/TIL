@@ -4,6 +4,50 @@
 
 
 
+## 문자열
+
+
+
+### KMP
+
+LPS를 활용하여 패턴이 갖는 문자를 찾는다.
+
+`LPS` 테이블을 활용한다.
+
+지금까지는 leng이 가리키는 문자와 i가 가리키는 문자가 같다면 i에 leng+1을 넣고 i와 leng 모두 1증가
+
+만약 다르다면
+
+leng 0이 아니라는 것은 뒤에 같은 글자가 존재할 수도 => leng을 0이 있는 곳으로 보내기
+
+leng이 0이라면 해당 자리를 0으로 넣고 i증가
+
+
+
+```python
+def make_lps(word):
+    leng = 0
+    lps = [0] * len(word)
+
+    i = 1
+
+    while i < len(word):
+        if word[leng]==word[i]:
+            leng += 1
+            lps[i] = leng
+            i += 1
+        else:
+            if leng != 0:
+                leng = lps[leng-1]
+            else:
+                lps[i] = 0
+                i += 1
+```
+
+
+
+
+
 ## Greedy
 
 > 매 순간 최적의 해를 선택하는 탐욕 알고리즘
